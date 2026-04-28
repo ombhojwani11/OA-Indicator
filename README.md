@@ -7,10 +7,10 @@ OA is a Pine Script v6 overlay indicator for TradingView. It combines volume ana
 ## What It Does
 
 ### Spike Signals
-These appear on individual candles and mark bars where multiple independent conditions aligned — volume, delta, momentum etc— in a way that historically precedes reversals. Every spike is scored. The score reflects how convincingly the conditions aligned on that specific bar relative to the instrument's own history. Stronger alignment = higher score = higher tier.
+These appear on individual candles and mark bars where multiple independent conditions aligned — volume, delta, momentum etc.— in a way that historically precedes reversals. Every spike is scored. The score reflects how convincingly the conditions aligned on that specific bar relative to the instrument's own history. Stronger alignment = higher score = higher tier.
 
-![KAYNES Futures Setup](KAYNES1!_2026-04-10_17-53-36.png)
-*Example: OA V6 identifying structural exhaustion using multi-factor confluence on KAYNES.*
+![SOLARINDS Futures Setup](SOLARINDS1!_2026-04-10_17-13-06%20Final.png)
+*Example: OA V6 identifying structural exhaustion, tracking clusters of weak signals, and firing graded Strong (triangle) signals on SOLARINDS.*
 
 Three tiers:
 - **Circle (Weak):** Signal fired, conditions met minimum threshold.
@@ -22,24 +22,13 @@ Green/red = signal direction. The number shown on each signal is the raw score f
 ### Divergence
 A separate system that detects divergence between price and internal buying/selling pressure over a rolling lookback window. When price is falling but internal buying pressure is rising (or vice versa), a divergence line is drawn with a score breakdown label. It extends as long as the divergence continues and seals when it stops.
 
-![SOLARINDS Futures Setup](SOLARINDS1!_2026-04-10_17-13-06%20Final.png)
-*Example: OA V6 tracking clustered divergence and strong structural signals on SOLARINDS.*
+![KAYNES Futures Setup](KAYNES1!_2026-04-10_17-53-36.png)
+*Example: OA V6 tracking a weak divergence signal alongside a high-conviction Trinity Gate confluence (Cross) on KAYNES.*
 
 Score breakdown in the label shows which components contributed and how many points each added.
 
 ### OI Bar Coloring
 When Open Interest data is available and enabled, candle borders are colored to show the OI interpretation for that bar: lime (long accumulation), red (short accumulation), aqua (short covering), orange (long unwinding).
-
----
-
-## Installation
-
-1. Open TradingView
-2. Go to Pine Script Editor (bottom panel)
-3. Paste the full contents of `OA.pine` (not revealed here)
-4. Click **Add to chart**
-
-The indicator runs as an overlay on the price chart. No separate pane needed.
 
 ---
 
@@ -116,10 +105,8 @@ Four alert conditions are available:
 - **BULL TRAP** — fires when a bull trap is detected
 - **BEAR TRAP** — fires when a bear trap is detected
 
-Set these up via TradingView's Alerts panel.
-
 ---
 
-## License
+## Disclaimer
 
-Personal use only. 
+**Proprietary Software:** The source code, core detection logic, and scoring matrix for this indicator are proprietary and not publicly distributed. This repository serves strictly as technical documentation and a portfolio demonstration of the system's architecture.

@@ -27,6 +27,11 @@ A separate system that detects divergence between price and internal buying/sell
 
 Score breakdown in the label shows which components contributed and how many points each added.
 
+### Technical Profile
+* **Framework:** Pine Script v6
+* **Scale:** 1,300+ lines of proprietary quantitative logic
+* **Platform:** TradingView
+
 ### OI Bar Coloring
 When Open Interest data is available and enabled, candle borders are colored to show the OI interpretation for that bar: lime (long accumulation), red (short accumulation), aqua (short covering), orange (long unwinding).
 

@@ -97,12 +97,6 @@ Tier classification uses breadth — how many of 5 independent components agreed
 - **Strong Tier: Min Breadth** — minimum number of components that must agree for a triangle signal.
 - **Super Tier: Min Breadth** — minimum for a cross signal.
 
-### ENTRY CONDITIONS
-Each entry condition can be toggled on or off individually. The specific logic of each condition is not disclosed. Toggling entries off narrows the conditions under which a spike can fire.
-
-### THRESHOLDS
-- **Spike** — base threshold score a bar must reach to fire a spike signal. Automatically scaled up on high-volatility bars and down on low-volatility bars.
-
 ### OVERRIDES
 Manual overrides for adaptive parameters. Off by default — the indicator adapts these automatically based on the instrument's volatility profile. Turn on only if you want to pin a specific value.
 

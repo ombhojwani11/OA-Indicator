@@ -19,7 +19,7 @@ Three tiers:
 
 Green/red = signal direction. The number shown on each signal is the raw score for that bar.
 
-### Divergence
+### Divergence Signals
 A separate system that detects divergence between price and internal buying/selling pressure over a rolling lookback window. When price is falling but internal buying pressure is rising (or vice versa), a divergence line is drawn with a score breakdown label. It extends as long as the divergence continues and seals when it stops.
 
 ![KAYNES Futures Setup](KAYNES1!_2026-04-10_17-53-36.png)
